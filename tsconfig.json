@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "rootDir": "./src", // 所要编译的代码文件夹
+        "outDir": "dist", // 重定向输出目录
+        "removeComments": true, // 删除注释 
+        "noImplicitAny": false, // 不允许隐式的 any 类型
+        "useDefineForClassFields": true,
+        "moduleResolution": "node",
+        "strict": false,
+        "jsx": "preserve",
+        "sourceMap": true, // 生成目标文件的sourceMap文件
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ],
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx", "src/lib/utils/loadRemotePreset.ts",
+    ]
+}
